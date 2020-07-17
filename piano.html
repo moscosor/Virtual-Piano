@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <script src="app.js"></script>
+    <title>Piano</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="piano" class="piano">
+            <div onclick="playSound(this)" id="C4" class="whitekey"></div>
+            <div onclick="playSound(this)" id="Db4"class="blackkey1"></div>
+            <div onclick="playSound(this)" id="D4" class="whitekey"></div>
+            <div onclick="playSound(this)" id="Eb4"class="blackkey2"></div>
+            <div onclick="playSound(this)" id="E4" class="whitekey"></div>
+            <div onclick="playSound(this)" id="F4" class="whitekey"></div>
+            <div onclick="playSound(this)" id="Gb4"class="blackkey3"></div>
+            <div onclick="playSound(this)" id="G4" class="whitekey"></div>
+            <div onclick="playSound(this)" id="Ab4"class="blackkey4"></div>
+            <div onclick="playSound(this)" id="A4" class="whitekey"></div>
+            <div onclick="playSound(this)" id="Bb4"class="blackkey5"></div>
+            <div onclick="playSound(this)" id="B4" class="whitekey"></div>
+            <div onclick="playSound(this)" id="C5" class="whitekey"></div>
+        </div>
+    </div>
+
+    <button onclick="playSong()">Play Song</button>
+    <button onclick="playOctave()">Play Octave</button>
+    <button onclick="playChord()">Play Chord</button>
+    <select name="Section" id="section" onchange="changeSection()">
+        <option value="1">C1</option>
+        <option value="2">C2</option>
+        <option value="3">C3</option>
+        <option value="4" selected>C4</option>
+        <option value="5">C5</option>
+        <option value="6">C6</option>
+        <option value="7">C7</option>
+      </select>
+</body>
+</html>
