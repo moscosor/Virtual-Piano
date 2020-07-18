@@ -5,6 +5,14 @@
 body{
     background: cadetblue;
 }
+.title h1{
+    padding: 15px 0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4rem;
+    font-weight: 300;
+}
+
 .piano{
     margin: 0 auto;
     position: relative;
@@ -92,6 +100,13 @@ body{
     background: rgb(53, 53, 53);
 }
 
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
 .myButton {
     margin: 0 15px;
 	box-shadow: 0px 1px 0px 0px #fff6af;
@@ -117,5 +132,4 @@ body{
 	position:relative;
 	top:1px;
 }
-
-        
+   

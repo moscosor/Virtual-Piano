@@ -1,11 +1,11 @@
 function playSong(){
-    let tempo = 345;
+    let tempo = 145;
     let cat = [0, 3, 5, 3, 5, 5, 5, 10, 8, 7, 5, 7, 7, 10, 12, 5, 3, 10, 10, 7, 10, 10, 12];
     let mha = [0,3,5,0,3,5,0,3,5,0,3,5,0,3,8,0,3,8,0,3,8,0,3,8,0,3,10,0,3,10,0,3,10,0,3,10,0,3,8,0,3,8,0,3,8,0,3,8];
     let keys = document.getElementById("piano").children;
-    for(let i = 0; i < cat.length; i++){
+    for(let i = 0; i < mha.length; i++){
         for(let j = 0; j < keys.length; j++){
-            if(cat[i] === j){
+            if(mha[i] === j){
                 pressKey(keys, j, i, tempo);
                 break;
             }

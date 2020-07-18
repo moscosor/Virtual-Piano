@@ -9,6 +9,11 @@
     <title>Piano</title>
 </head>
 <body>
+
+    <div class="title">
+        <h1>Virtual Piano</h1>
+    </div>
+
     <div class="wrapper">
         <div id="piano" class="piano">
             <div onclick="playSound(this)" id="C4" class="whitekey"></div>
@@ -31,7 +36,7 @@
         <button class="myButton" onclick="playSong()">Play Song</button>
         <button class="myButton" onclick="playOctave()">Play Octave</button>
         <button class="myButton" onclick="playChord()">Play Chord</button>
-        <select name="Section" id="section" onchange="changeSection()">
+        <select class="myButton" name="Section" id="section" onchange="changeSection()">
             <option value="1">C1</option>
             <option value="2">C2</option>
             <option value="3">C3</option>
